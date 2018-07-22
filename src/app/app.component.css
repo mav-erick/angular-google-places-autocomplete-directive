@@ -1,0 +1,12 @@
+.input-container {
+    text-align: center; 
+    width: 100%;
+}
+
+.google-place-input {
+    width: 50%;
+    min-width: 280px;
+    height: 2rem; 
+    font-size: 1.5rem; 
+    padding: 0.5rem;
+}
