@@ -23,6 +23,7 @@ describe('GooglePlacesDirective', () => {
     component = fixture.componentInstance;
     inputEl = fixture.debugElement.query(By.css('input'))
   })
+  
   it('should create the directive', () => {
     const directive = new GooglePlacesDirective(inputEl);
     expect(directive).toBeTruthy();
