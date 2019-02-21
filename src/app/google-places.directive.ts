@@ -1,6 +1,5 @@
+/// <reference types="@types/googlemaps" />
 import { Directive, ElementRef, OnInit, Output, EventEmitter } from '@angular/core';
-
-declare var google:any;
 
 @Directive({
   selector: '[google-place]'
@@ -42,7 +41,7 @@ export class GooglePlacesDirective implements OnInit {
   }
 
   ngOnInit() {
-    const autocomplete = new google.maps.places.Autocomplete(this.element);
+      const autocomplete = new google.maps.places.Autocomplete(this.element);
       //Event listener to monitor place changes in the input
       google.maps.event.addListener(autocomplete, 'place_changed', () => {
       //Emit the new address object for the updated place
